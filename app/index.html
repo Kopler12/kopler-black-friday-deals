@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHound — Real Black Friday &amp; Cyber Monday Deals 2026</title>
+<meta name="description" content="32 real Black Friday and Cyber Monday deals, each checked on 27 Nov 2026 with its store, sale price, usual price and an honest is-it-really-a-deal verdict.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">BLACK FRIDAY &middot; CYBER MONDAY &middot; 27&ndash;30 NOV 2026</p>
+  <h1>DealHound</h1>
+  <p class="tagline">Sniffing out the real bargains — every price checked today, nothing invented.</p>
+  <div class="stats">
+    <div class="stat"><strong id="stat-deals">32</strong><span>deals tracked</span></div>
+    <div class="stat"><strong id="stat-true">10</strong><span>true deals</span></div>
+    <div class="stat"><strong id="stat-saved">$7,957.54</strong><span>total savings if you bought one of each</span></div>
+    <div class="stat"><strong id="stat-biggest">-79%</strong><span>biggest discount</span></div>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Find a deal">
+    <input id="search" type="search" placeholder="Search deals — try &ldquo;dyson&rdquo; or &ldquo;lego&rdquo;&hellip;" aria-label="Search deals">
+    <select id="category" aria-label="Filter by category"></select>
+    <select id="store" aria-label="Filter by store"></select>
+    <select id="discount" aria-label="Filter by minimum discount">
+      <option value="0">Any discount</option>
+      <option value="30">30% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+    <select id="sort" aria-label="Sort deals">
+      <option value="verdict">Sort: true deals first</option>
+      <option value="discount">Sort: biggest discount</option>
+      <option value="saved">Sort: most dollars saved</option>
+      <option value="price">Sort: lowest price</option>
+    </select>
+    <label class="toggle"><input id="verdict-only" type="checkbox"> True deals only</label>
+  </section>
+
+  <p id="count" class="count">Showing 32 of 32 deals</p>
+  <section id="grid" class="grid" aria-live="polite"></section>
+
+  <section class="how">
+    <h2>How we check a deal</h2>
+    <ol>
+      <li><strong>Read the price.</strong> Every sale price and usual price on this page was read on 27 Nov 2026 from a deals roundup that names the store (Mashable, Yahoo, Inc., Popular Science, 9to5Google, The Tech Hacker, BeeBulletin, Neeshu, or the store&rsquo;s own Black Friday release). The source is printed on every card.</li>
+      <li><strong>Do the maths.</strong> The discount and the dollars saved are computed from those two prices, so they always add up.</li>
+      <li><strong>Call it honestly.</strong> <span class="badge badge-true">TRUE DEAL</span> means a new low or the year&rsquo;s best price. <span class="badge badge-strong">STRONG PRICE</span> means a genuinely good cut. <span class="badge badge-routine">ROUTINE SALE</span> means a small, everyday-style discount. <span class="badge badge-check">CHECK THE FINE PRINT</span> means the store&rsquo;s &ldquo;was&rdquo; price is a comparison value, not a price the item ever sold for — judge the deal by the sale price alone.</li>
+      <li><strong>Link to the store.</strong> Each &ldquo;View at&rdquo; button opens that store&rsquo;s own search for the exact product, so you can confirm the live price before you buy. Prices move fast — check the listing before paying.</li>
+    </ol>
+    <p class="fineprint">DealHound is an independent deal finder built for the make.fun Black Friday bounty. It is not affiliated with Amazon, Best Buy, Walmart, Target, or any brand shown. Store links are plain links, not trackers; this page makes no network requests of its own and works fully offline from its own files.</p>
+  </section>
+</main>
+
+<footer>
+  <p>DealHound &middot; Prices checked 27 Nov 2026, 14:00 WIB &middot; Black Friday 27 Nov &ndash; Cyber Monday 30 Nov 2026</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
